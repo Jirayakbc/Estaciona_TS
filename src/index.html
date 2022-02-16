@@ -4,32 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Estacionamento</title>
 </head>
 <body>
-    <input type="text" 
-    id="nome" 
-    placeholder="Digite o nome do veículo" 
-    autocomplete="off"
-    />
-    <input type="text" 
-    id="placa" 
-    placeholder="Digite a placa do veículo" 
-    autocomplete="off"
-    />
-    <button id="cadastrar">Cadastar</button>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Placa</th>
-                <th>Entrada</th>
-                <th>Açoes</th>
-            </tr>
-        </thead>
-        <tbody id="patio"></tbody>
-    </table>
-    <script src="./script.js"></script>
+    <div class="cima">
+        <div class="title">
+            <h1>ESTACIONAMENTO DIÁRIO PARKING</h1>
+        </div>
+    <div class="body">
+            <input class="w3-input" type="text" 
+            id="nome" 
+            placeholder="Digite o nome do veículo" 
+            autocomplete="off"
+            />
+            <input class="w3-input" type="text" 
+            id="placa" 
+            placeholder="Digite a placa do veículo" 
+            autocomplete="off"
+            />
+            <button class="cadastrar" id="cadastrar">Cadastar</button>
+    </div>   
+    <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th class="acao">Açoes</th>
+                    </tr>
+                </thead>
+                <tbody id="patio"></tbody>
+            </table>
+            <script src="./script.js"></script>
+    </div>
+    </div>
 </body>
 </html>
